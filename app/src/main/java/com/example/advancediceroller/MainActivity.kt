@@ -1,15 +1,12 @@
-package com.example.advancediceroller;
+package com.example.advancediceroller
 
-import android.app.Activity;
-import android.os.Bundle;
+import android.app.Activity
+import android.os.Bundle
 
-import androidx.annotation.Nullable;
+class MainActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-public class MainActivity extends Activity {
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main)
     }
 }
