@@ -43,10 +43,12 @@
             android:height="48dp"
             android:hint="@string/first_name"
             android:inputType="text"
+            android:autofillHints="@string/first_name"
             app:layout_constraintBottom_toTopOf="@+id/last_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+             />
 
         <EditText
             android:id="@+id/last_name"
@@ -56,11 +58,13 @@
             android:layout_marginBottom="16dp"
             android:height="48dp"
             android:hint="@string/last_name"
+            android:autofillHints="@string/last_name"
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/email_address"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/first_name" />
+            app:layout_constraintTop_toBottomOf="@+id/first_name"
+             />
 
         <EditText
             android:id="@+id/email_address"
@@ -70,12 +74,14 @@
             android:layout_marginBottom="16dp"
             android:height="48dp"
             android:ems="10"
+            android:autofillHints="@string/email_address"
             android:hint="@string/email_address"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toTopOf="@+id/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/last_name" />
+            app:layout_constraintTop_toBottomOf="@+id/last_name"
+             />
 
         <EditText
             android:id="@+id/password"
@@ -86,11 +92,13 @@
             android:height="48dp"
             android:ems="10"
             android:hint="@string/password"
+            android:autofillHints="@string/password"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/confirm_password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_address" />
+            app:layout_constraintTop_toBottomOf="@+id/email_address"
+             />
 
         <EditText
             android:id="@+id/confirm_password"
@@ -100,12 +108,14 @@
             android:layout_marginBottom="16dp"
             android:height="48dp"
             android:ems="10"
+            android:autofillHints="@string/confirm_password"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/submit"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
+            app:layout_constraintTop_toBottomOf="@+id/password"
+             />
 
         <Button
             android:id="@+id/submit"
