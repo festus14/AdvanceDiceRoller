@@ -10,16 +10,14 @@ import androidx.navigation.fragment.findNavController
 import com.example.advancediceroller.R
 
 class HomeFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
          val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val signUpBtn = view.findViewById<Button>(R.id.signUpBtn)
-        val signInBtn = view.findViewById<Button>(R.id.signInBtn)
+        val signUpBtn = view.findViewById<Button>(R.id.sign_up_button)
+        val signInBtn = view.findViewById<Button>(R.id.sign_in_button)
 
         signUpBtn.setOnClickListener{
             val action =
