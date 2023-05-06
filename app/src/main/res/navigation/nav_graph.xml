@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.advancediceroller.home.HomeFragment"
+        android:name="com.example.advancediceroller.home.HomeView"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.advancediceroller.authentication.SignUpFragment"
+        android:name="com.example.advancediceroller.authentication.SignUpView"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.advancediceroller.authentication.SignInFragment"
+        android:name="com.example.advancediceroller.authentication.SignInView"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/userActionFragment"
-        android:name="com.example.advancediceroller.UserActionFragment"
+        android:name="com.example.advancediceroller.user_action.UserActionView"
         android:label="fragment_user_action"
         tools:layout="@layout/fragment_user_action" >
         <action
@@ -49,12 +49,16 @@
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.example.advancediceroller.HistoryFragment"
+        android:name="com.example.advancediceroller.history.HistoryView"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.example.advancediceroller.GameFragment"
+        android:name="com.example.advancediceroller.game.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
 </navigation>
