@@ -14,4 +14,10 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="submit">Submit</string>
     <string name="sign_in_text">Sign In</string>
+    <string name="history">History</string>
+    <string name="game">Game</string>
+    <string name="dice_image">Dice image</string>
+    <string name="roll">Roll</string>
+    <string name="_6">6</string>
+    <string name="excellent">Excellent!</string>
 </resources>

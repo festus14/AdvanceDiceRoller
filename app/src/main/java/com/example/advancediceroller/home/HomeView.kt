@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.advancediceroller.R
 
-class HomeFragment : Fragment() {
+class HomeView : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,13 +21,13 @@ class HomeFragment : Fragment() {
 
         signUpBtn.setOnClickListener{
             val action =
-            HomeFragmentDirections.actionHomeFragmentToSignUpFragment()
+            HomeViewDirections.actionHomeFragmentToSignUpFragment()
             findNavController().navigate(action)
         }
 
         signInBtn.setOnClickListener{
             val action =
-            HomeFragmentDirections.actionHomeFragmentToSignInFragment()
+            HomeViewDirections.actionHomeFragmentToSignInFragment()
             findNavController().navigate(action)
         }
 
